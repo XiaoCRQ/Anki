@@ -18,15 +18,19 @@
 #define FOR(i, a, b) for (int i = (a); i <= (b); i++)
 #define FORD(i, a, b) for (int i = (a); i >= (b); i--)
 #define RESET(a, b) memset(a, b, sizeof(a))
+#define array_two(value, n, m, type)                                           \
+  vector<vector<type>> value(n, vector<type>(m, 0))
 
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
+typedef pair<int, string> pis;
 typedef pair<ll, ll> pll;
 typedef vector<int> vi;
 typedef vector<ll> vl;
 typedef vector<pii> vpi;
+typedef vector<pis> vpis;
 
 const int INF = 1e9;
 const ll LINF = 1e18;
@@ -71,7 +75,7 @@ void solve() {}
 int main() {
   fast_io();
 
-  int T = 1;
+  ll T = 1;
   // if (!(cin >> T)) return 0;
 
   while (T--) {
